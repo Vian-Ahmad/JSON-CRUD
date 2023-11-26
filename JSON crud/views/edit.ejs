@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body>
+
+    <form action="" method="post">
+        <div class="formulir">
+            <input type="text" name="name" placeholder="insert your name" value="<%= dataEdit.name %>" required class="subForm" /><br>
+            <input type="text" name="height" placeholder="insert your height" value="<%= dataEdit.height %>" required class="subForm" /><br>
+            <input type="text" pattern="\d+(\.\d+)?" name="weight" placeholder="insert your weight" value="<%= dataEdit.weight %>" required
+                class="subForm" /><br>
+            <input type="date" name="birthdate" value="<%= dataEdit.birthdate %>" required class="subForm" /><br>
+            <select id="married" name="married" class="subForm">
+                <option value="">Have You Married ?</option>
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select><br>
+            <button class="tombol-simpan" type="submit">Save</button>
+            <a href="/" class="tombol">
+                <button class="tombol-batal" type="button">Cancel</button>
+            </a>
+        </div>
+    </form>
+
+</body>
+
+</html>

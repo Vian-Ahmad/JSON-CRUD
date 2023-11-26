@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD JSON</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>JSON CRUD (Create, Read, Update, Delete)</h1>
+    <a href="/add" class="tombol">
+        <button class="tombol-buat">Create</button>
+    </a>
+    <div class="bagan">
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Birth Date</th>
+                <th>Is Married</th>
+                <th>Action</th>
+            </tr>
+            <% datanya.forEach((item, index)=> { %>
+                <tr>
+                    <td>
+                        <%= index + 1 %>
+                    </td>
+                    <td>
+                        <%= item.name %>
+                    </td>
+                    <td>
+                        <%= item.height %>
+                    </td>
+                    <td>
+                        <%= item.weight %>
+                    </td>
+                    <td>
+                        <%= item.birthdate %>
+                    </td>
+                    <td>
+                        <%= item.married !==null && item.married !==undefined ? (item.married ? 'Yes' : 'Not Yet' ) : ''
+                            %>
+
+                    </td>
+                    <td>
+                        <a href="/edit/<%= index %>">Update</a>
+                        <a href="/delete/<%= index %>" onclick="return confirmation('<%item.name%>')">Delete</a>
+                    </td>
+                </tr>
+                <% }) %>
+    </div>
+    </table>
+    <script>
+        function confirmation(name) { 
+            return confirm(`Apakah kamu yakin akan menghapus data '${name}' ?`)
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+body {
+    background-color: rgb(224, 237, 242);
+
+}
+
+.bagan {
+    border: 1px rgb(200, 199, 199);
+    border-style: groove;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+th {
+    text-align: justify;
+    padding: 8px;
+}
+
+td {
+    text-align: justify;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+.tombol-buat {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 5px;
+    border-color: transparent;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #eaeaea;
+    cursor: pointer;
+
+}
+
+.tombol-buat:hover {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(2, 2, 186);
+    border-radius: 5px;
+    border-color: transparent;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #eaeaea;
+    cursor: pointer;
+
+}
+
+.tombol-simpan {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    border-radius: 5px;
+    border-color: transparent;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #eaeaea;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.tombol-simpan:hover {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 88, 0);
+    border-radius: 5px;
+    border-color: transparent;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #eaeaea;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.tombol-batal {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 5px;
+    border-color: transparent;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #eaeaea;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.tombol-batal:hover {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(2, 2, 186);
+    border-radius: 5px;
+    border-color: transparent;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #eaeaea;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.formulir {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.subForm {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    
+}
+
+.subForm:hover {
+    background-color: whitesmoke;
+    border: 2px solid blue;
+    
+}
+
+
+

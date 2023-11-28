@@ -27,7 +27,7 @@ app.post('/add', (req, res) => {
     const dataBaru = {
         name: req.body.name,
         height: parseInt(req.body.height),
-        weight: parseFloat(req.body.weight),
+        weight: req.body.weight,
         birthdate: req.body.birthdate,
         married: req.body.married === 'true' ? true : req.body.married === 'false' ? false : ''
     }
@@ -61,7 +61,7 @@ app.post('/edit/:id', (req, res) => {
     datanya[id] = { 
         name: req.body.name,
         height: parseInt(req.body.height),
-        weight: parseFloat(req.body.weight),
+        weight: req.body.weight,
         birthdate: req.body.birthdate,
         married: req.body.married === 'true' ? true : req.body.married === 'false' ? false : ''
      }

@@ -18,6 +18,7 @@ table {
 th {
     text-align: justify;
     padding: 8px;
+    background-color: rgb(224, 237, 242);;
 }
 
 td {
@@ -25,7 +26,7 @@ td {
     padding: 8px;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #eaeaea;
 }
 

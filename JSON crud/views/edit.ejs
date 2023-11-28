@@ -20,8 +20,8 @@
             <input type="date" name="birthdate" value="<%= dataEdit.birthdate %>" required class="subForm" /><br>
             <select id="married" name="married" class="subForm">
                 <option value="">Have You Married ?</option>
-                <option value="true">true</option>
-                <option value="false">false</option>
+                <option value="true" <%= dataEdit.married === true ? 'selected' : '' %>>true</option>
+                <option value="false" <%= dataEdit.married === false ? 'selected' : '' %>>false</option>
             </select><br>
             <button class="tombol-simpan" type="submit">Save</button>
             <a href="/" class="tombol">

@@ -139,11 +139,26 @@ tr:nth-child(odd) {
     
 }
 
-.subForm:hover {
+.subForm:focus {
     background-color: whitesmoke;
-    border: 2px solid blue;
+    border: 1px solid green;
     
 }
 
+.subForm2 {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
 
+}
+
+.subForm2:focus {
+    background-color: whitesmoke;
+    border: 3px solid green;
+    
+}
 

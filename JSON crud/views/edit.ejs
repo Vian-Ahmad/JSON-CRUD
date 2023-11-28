@@ -18,7 +18,7 @@
             <input type="text" pattern="\d+(\.\d+)?" name="weight" placeholder="insert your weight" value="<%= dataEdit.weight %>" required
                 class="subForm" /><br>
             <input type="date" name="birthdate" value="<%= dataEdit.birthdate %>" required class="subForm" /><br>
-            <select id="married" name="married" class="subForm">
+            <select id="married" name="married" class="subForm2">
                 <option value="">Have You Married ?</option>
                 <option value="true" <%= dataEdit.married === true ? 'selected' : '' %>>true</option>
                 <option value="false" <%= dataEdit.married === false ? 'selected' : '' %>>false</option>
